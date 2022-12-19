@@ -11,7 +11,7 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _rb2d = GetComponent<Rigidbody2D>(); //³õÊ¼»¯
+        _rb2d = GetComponent<Rigidbody2D>(); //åˆå§‹åŒ–
     }
 
     // Update is called once per frame
@@ -23,13 +23,11 @@ public class Move : MonoBehaviour
 
     }
     private void FixedUpdate()  
-        //ÓÉÓÚÎïÀíÒıÇæÊÇfixedupdateËùÒÔÌøÔ¾ĞèÒªfixedupdate£¬´Ë´¦Ê¹ÓÃdynamic·½·¨£¬ÎÒ×Ô¼ºÔËĞĞĞ§¹ûºÜ²î£¬²»ÖªµÀÊ²Ã´Ô­Òò
-        //±ğ¹ÜÕâ¶ÎÁË£¬Ö±½ÓÓÃkineticµÄ°É
     {
         //if (jumping)
         //{
-            //_rb2d.velocity = new Vector2(_rb2d.velocity.x, jumpSpeed);   //¸ÄËÙ¶È
-            //_rb2d.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);  //¼ÓimpulseÁ¦
+            //_rb2d.velocity = new Vector2(_rb2d.velocity.x, jumpSpeed);   //æ”¹é€Ÿåº¦
+            //_rb2d.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);  //åŠ impulseåŠ›
           //  jumping = false;
         //}
     }
